@@ -12,7 +12,7 @@ client.send(name.encode())
 print(client.recv(1024).decode())
 
 #device status
-client.send(name.encode()+" is online \n".encode())
+client.send((name+" is online \n").encode())
 
 #authentication 
 client.send(password.encode())
